@@ -73,6 +73,7 @@ dependencies:
 
   # aliyun
   flutter_oss_aliyun: ^6.3.0
+  in_app_purchase: ^3.1.11
 
 dev_dependencies:
   flutter_test:

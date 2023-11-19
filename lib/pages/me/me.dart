@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mage/components/milestone_timeline.dart';
 import 'package:mage/helper/auth/get_user.dart';
-import 'package:mage/helper/save_image.dart';
 
 import 'package:mage/components/app_navigation_bar.dart';
 
