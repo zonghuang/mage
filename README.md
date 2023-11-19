@@ -15,3 +15,16 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+常用命令
+flutter doctor
+dart fix --dry-run
+flutter pub upgrade
+open -a Simulator
+flutter run
+export https_proxy=http://127.0.0.1:7890;
+firebase login --no-localhost
+flutterfire configure --project=mage-e180d
+
+zonghuang@zonghuangdeMacBook-Pro mage_app % keytool -list -v \
+-alias androiddebugkey -keystore ~/.android/debug.keystore
+输入密钥库口令:  
