@@ -1,0 +1,37 @@
+{
+	"homeTitle": "Crear imágenes en mi estilo artístico",
+  "artTitle": "Estilo artístico",
+  "style": "{stylePlaceholder, select, Cyberpunk{Ciberpunk} InkPainting{Pintura de tinta} Ukiyoe{Ukiyo-e} Steampunk{Steampunk} AntiqueDress{Vestido antiguo} AnimeFilm{Película de anime} MechStyle{Estilo mech} EmbossedStyle{Estilo en relieve} CityStyle{Estilo de ciudad} other{}}",
+  "@style": {
+    "description": "A style mode",
+    "placeholders": {
+      "stylePlaceholder": {
+        "type": "String"
+      }
+    }
+  },
+  "mode": "{modePlaceholder, select, picture{Imagen} text{Enlace/Texto} prompt{Indicación} other{}}",
+  "@mode": {
+    "description": "A mode type",
+    "placeholders": {
+      "modePlaceholder": {
+        "type": "String"
+      }
+    }
+  },
+  "pictureTips": "Por favor suba su imagen.",
+  "textTips": "Por favor ingrese su enlace o texto.",
+  "promptTips": "Por favor ingrese su indicación.",
+  "uploadFailure": "Fallo de carga",
+  "successful": "Exitoso",
+  "failure": "Fracaso",
+  "ok": "Ok",
+  "empty": "Vacío",
+  "showMenu": "Mostrar menú",
+  "download": "Descargar",
+  "make": "Hacer",
+  "home": "Inicio",
+  "me": "Yo",
+
+	"helloWorld": "¡Hola Mundo!"
+}

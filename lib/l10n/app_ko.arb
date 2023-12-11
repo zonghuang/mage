@@ -1,0 +1,37 @@
+{
+	"homeTitle": "나의 예술적 스타일로 그림 만들기",
+  "artTitle": "예술적 스타일",
+  "style": "{stylePlaceholder, select, Cyberpunk{나의 예술적 스타일로 그림 만들기} InkPainting{예술적 스타일} Ukiyoe{사이버펑크} Steampunk{수묵화} AntiqueDress{우키요에} AnimeFilm{스팀펑크} MechStyle{앤틱 드레스} EmbossedStyle{애니메이션 영화} CityStyle{메카 스타일} other{}}",
+  "@style": {
+    "description": "A style mode",
+    "placeholders": {
+      "stylePlaceholder": {
+        "type": "String"
+      }
+    }
+  },
+  "mode": "{modePlaceholder, select, picture{엠보스 스타일} text{시티 스타일} prompt{사진} other{}}",
+  "@mode": {
+    "description": "A mode type",
+    "placeholders": {
+      "modePlaceholder": {
+        "type": "String"
+      }
+    }
+  },
+  "pictureTips": "사진을 업로드해주세요.",
+  "textTips": "링크나 텍스트를 입력해주세요.",
+  "promptTips": "프롬프트를 입력해주세요.",
+  "uploadFailure": "업로드 실패",
+  "successful": "성공",
+  "failure": "실패",
+  "ok": "네",
+  "empty": "비어있는",
+  "showMenu": "메뉴 보기",
+  "download": "다운로드",
+  "make": "만들기",
+  "home": "홈",
+  "me": "나",
+
+	"helloWorld": "안녕, 세상!"
+}

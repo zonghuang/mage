@@ -1,0 +1,37 @@
+{
+	"homeTitle": "私の芸術的なスタイルで画像を作成する",
+  "artTitle": "芸術的なスタイル",
+  "style": "{stylePlaceholder, select, Cyberpunk{サイバーパンク} InkPainting{墨絵} Ukiyoe{浮世絵} Steampunk{スチームパンク} AntiqueDress{アンティークドレス} AnimeFilm{アニメ映画} MechStyle{メックスタイル} EmbossedStyle{エンボススタイル} CityStyle{シティスタイル} other{}}",
+  "@style": {
+    "description": "A style mode",
+    "placeholders": {
+      "stylePlaceholder": {
+        "type": "String"
+      }
+    }
+  },
+  "mode": "{modePlaceholder, select, picture{画像} text{リンク/テキスト} prompt{プロンプト} other{}}",
+  "@mode": {
+    "description": "A mode type",
+    "placeholders": {
+      "modePlaceholder": {
+        "type": "String"
+      }
+    }
+  },
+  "pictureTips": "あなたの画像をアップロードしてください",
+  "textTips": "リンクまたはテキストを入力してください",
+  "promptTips": "プロンプトを入力してください",
+  "uploadFailure": "アップロード失敗",
+  "successful": "成功",
+  "failure": "失敗",
+  "ok": "はい",
+  "empty": "空の",
+  "showMenu": "メニューを表示する",
+  "download": "ダウンロード",
+  "make": "作る",
+  "home": "ホーム",
+  "me": "私",
+
+	"helloWorld": "こんにちは、世界！"
+}

@@ -1,0 +1,37 @@
+{
+	"homeTitle": "أنشئ صورًا بأسلوبي الفني",
+  "artTitle": "أسلوب فني",
+  "style": "{stylePlaceholder, select, Cyberpunk{سايبربنك} InkPainting{رسم بالحبر} Ukiyoe{أوكيو-إي} Steampunk{ستيمبانك} AntiqueDress{فستان أنتيك} AnimeFilm{فيلم أنمي} MechStyle{أسلوب الميك} EmbossedStyle{أسلوب بارز} CityStyle{أسلوب المدينة} other{}}",
+  "@style": {
+    "description": "A style mode",
+    "placeholders": {
+      "stylePlaceholder": {
+        "type": "String"
+      }
+    }
+  },
+  "mode": "{modePlaceholder, select, picture{صورة} text{رابط/نص} prompt{موجه} other{}}",
+  "@mode": {
+    "description": "A mode type",
+    "placeholders": {
+      "modePlaceholder": {
+        "type": "String"
+      }
+    }
+  },
+  "pictureTips": "الرجاء تحميل صورتك.",
+  "textTips": "الرجاء إدخال الرابط أو النص الخاص بك.",
+  "promptTips": "الرجاء إدخال موجهك.",
+  "uploadFailure": "فشل التحميل",
+  "successful": "ناجح",
+  "failure": "فشل",
+  "ok": "حسناً",
+  "empty": "فارغ",
+  "showMenu": "عرض القائمة",
+  "download": "تحميل",
+  "make": "صنع",
+  "home": "الرئيسية",
+  "me": "أنا",
+
+	"helloWorld": "مرحبا بك في العالم!"
+}

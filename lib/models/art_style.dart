@@ -7,7 +7,8 @@ class ArtStyleModel extends ChangeNotifier {
   late bool _isUploading = false;
 
   ArtStyleModel() {
-    _artStyleForm = ArtStyleForm('赛博朋克', <Options>{Options.text}, '', '', '');
+    _artStyleForm =
+        ArtStyleForm('赛博朋克', <Options>{Options.picture}, '', '', '');
   }
 
   ArtStyleForm get artStyleForm => _artStyleForm;

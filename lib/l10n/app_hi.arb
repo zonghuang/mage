@@ -1,0 +1,37 @@
+{
+	"homeTitle": "मेरे कलात्मक शैली में चित्र बनाएं",
+  "artTitle": "कलात्मक शैली",
+  "style": "{stylePlaceholder, select, Cyberpunk{साइबरपंक} InkPainting{स्याही से चित्रकारी} Ukiyoe{उकियोए} Steampunk{स्टीमपंक} AntiqueDress{प्राचीन पोशाक} AnimeFilm{एनिमे फिल्म} MechStyle{मेक शैली} EmbossedStyle{उभारी हुई शैली} CityStyle{शहरी शैली} other{}}",
+  "@style": {
+    "description": "A style mode",
+    "placeholders": {
+      "stylePlaceholder": {
+        "type": "String"
+      }
+    }
+  },
+  "mode": "{modePlaceholder, select, picture{चित्र} text{लिंक/पाठ} prompt{प्रेरणा} other{}}",
+  "@mode": {
+    "description": "A mode type",
+    "placeholders": {
+      "modePlaceholder": {
+        "type": "String"
+      }
+    }
+  },
+  "pictureTips": "कृपया अपनी तस्वीर अपलोड करें।",
+  "textTips": "कृपया अपना लिंक या पाठ दर्ज करें।",
+  "promptTips": "कृपया अपनी प्रेरणा दर्ज करें।",
+  "uploadFailure": "अपलोड विफल",
+  "successful": "सफल",
+  "failure": "विफलता",
+  "ok": "ठीक है",
+  "empty": "खाली",
+  "showMenu": "मेन्यू दिखाएं",
+  "download": "डाउनलोड",
+  "make": "बनाना",
+  "home": "होम",
+  "me": "मैं",
+
+	"helloWorld": "नमस्ते दुनिया!"
+}

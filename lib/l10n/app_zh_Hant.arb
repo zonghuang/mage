@@ -1,0 +1,37 @@
+{
+	"homeTitle": "製作我的藝術圖片",
+  "artTitle": "藝術風格",
+  "style": "{stylePlaceholder, select, Cyberpunk{賽博朋克} InkPainting{水墨山水畫} Ukiyoe{浮世繪} Steampunk{蒸氣朋克} AntiqueDress{古风服饰} AnimeFilm{二次元電影} MechStyle{機甲風格} EmbossedStyle{浮雕風格} CityStyle{建築風格} other{}}",
+  "@style": {
+    "description": "A style mode",
+    "placeholders": {
+      "stylePlaceholder": {
+        "type": "String"
+      }
+    }
+  },
+  "mode": "{modePlaceholder, select, picture{圖片} text{鏈接/文本} prompt{提示詞} other{}}",
+  "@mode": {
+    "description": "A mode type",
+    "placeholders": {
+      "modePlaceholder": {
+        "type": "String"
+      }
+    }
+  },
+  "pictureTips": "請上傳您的圖片",
+  "textTips": "請輸入您的鏈接或文本",
+  "promptTips": "請輸入您的提示詞",
+  "uploadFailure": "上傳失敗",
+  "successful": "成功",
+  "failure": "失敗",
+  "ok": "好的",
+  "empty": "空的",
+  "showMenu": "顯示菜單",
+  "download": "下載",
+  "make": "製作",
+  "home": "首頁",
+  "me": "我的",
+
+	"helloWorld": "你好 世界！"
+}

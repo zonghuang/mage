@@ -1,0 +1,37 @@
+{
+	"homeTitle": "Создайте картинки в моем художественном стиле",
+  "artTitle": "Художественный стиль",
+  "style": "{stylePlaceholder, select, Cyberpunk{Киберпанк} InkPainting{Тушевая живопись} Ukiyoe{Укиё-э} Steampunk{Стимпанк} AntiqueDress{Антикварное платье} AnimeFilm{Аниме-фильм} MechStyle{Стиль меха} EmbossedStyle{Рельефный стиль} CityStyle{Городской стиль} other{}}",
+  "@style": {
+    "description": "A style mode",
+    "placeholders": {
+      "stylePlaceholder": {
+        "type": "String"
+      }
+    }
+  },
+  "mode": "{modePlaceholder, select, picture{Картинка} text{Ссылка/Текст} prompt{Подсказка} other{}}",
+  "@mode": {
+    "description": "A mode type",
+    "placeholders": {
+      "modePlaceholder": {
+        "type": "String"
+      }
+    }
+  },
+  "pictureTips": "Пожалуйста, загрузите вашу картинку.",
+  "textTips": "Пожалуйста, введите вашу ссылку или текст.",
+  "promptTips": "Пожалуйста, введите вашу подсказку.",
+  "uploadFailure": "Ошибка загрузки",
+  "successful": "Успешно",
+  "failure": "Неудача",
+  "ok": "Хорошо",
+  "empty": "Пустой",
+  "showMenu": "Показать меню",
+  "download": "Скачать",
+  "make": "Сделать",
+  "home": "Главная",
+  "me": "Я",
+
+	"helloWorld": "Привет, мир!"
+}

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:go_router/go_router.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'package:mage/models/user.dart';
 
@@ -27,16 +28,16 @@ class AppNavigationBar extends StatelessWidget {
         backgroundColor: Colors.deepPurple[50],
         indicatorColor: Colors.deepPurple[100],
         selectedIndex: userModel.currentPageIndex,
-        destinations: const <Widget>[
+        destinations: <Widget>[
           NavigationDestination(
-            selectedIcon: Icon(Icons.home),
-            icon: Icon(Icons.home_outlined),
-            label: 'Home',
+            selectedIcon: const Icon(Icons.home),
+            icon: const Icon(Icons.home_outlined),
+            label: AppLocalizations.of(context)!.home,
           ),
           NavigationDestination(
-            selectedIcon: Icon(Icons.person),
-            icon: Icon(Icons.person_outline),
-            label: 'Me',
+            selectedIcon: const Icon(Icons.person),
+            icon: const Icon(Icons.person_outline),
+            label: AppLocalizations.of(context)!.me,
           ),
         ],
       ),

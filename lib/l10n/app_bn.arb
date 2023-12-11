@@ -1,0 +1,37 @@
+{
+	"homeTitle": "আমার শিল্পী শৈলীতে চিত্র তৈরি করুন",
+  "artTitle": "শিল্পী শৈলী",
+  "style": "{stylePlaceholder, select, Cyberpunk{সাইবারপাংক} InkPainting{মুসলিম চিত্র} Ukiyoe{উকিয়ে} Steampunk{স্টিমপাংক} AntiqueDress{প্রাচীন পোশাক} AnimeFilm{অ্যানিমে চলচ্চিত্র} MechStyle{মেক শৈলী} EmbossedStyle{উত্তুলিত শৈলী} CityStyle{শহরের স্টাইল} other{}}",
+  "@style": {
+    "description": "A style mode",
+    "placeholders": {
+      "stylePlaceholder": {
+        "type": "String"
+      }
+    }
+  },
+  "mode": "{modePlaceholder, select, picture{ছবি} text{লিংক/পাঠ্য} prompt{সূচনা} other{}}",
+  "@mode": {
+    "description": "A mode type",
+    "placeholders": {
+      "modePlaceholder": {
+        "type": "String"
+      }
+    }
+  },
+  "pictureTips": "আপনার ছবিটি আপলোড করুন।",
+  "textTips": "আপনার লিংক বা পাঠ্য লিখুন।",
+  "promptTips": "আপনার সূচনা লিখুন।",
+  "uploadFailure": "আপলোড ব্যর্থ",
+  "successful": "সফল",
+  "failure": "ব্যর্থতা",
+  "ok": "ঠিক আছে",
+  "empty": "খালি",
+  "showMenu": "মেনু দেখান",
+  "download": "ডাউনলোড",
+  "make": "তৈরি করুন",
+  "home": "হোম",
+  "me": "আমি",
+
+	"helloWorld": "হ্যালো বিশ্ব!"
+}

@@ -76,6 +76,8 @@ dependencies:
 
   # pay
   in_app_purchase: ^3.1.11
+  in_app_purchase_android: ^0.3.0+15
+  in_app_purchase_storekit: ^0.3.7
 
 dev_dependencies:
   flutter_test:

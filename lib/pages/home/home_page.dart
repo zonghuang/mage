@@ -1,8 +1,8 @@
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
-import 'package:mage/helper/auth/get_user.dart';
-import 'package:provider/provider.dart';
 
 import 'package:mage/components/app_navigation_bar.dart';
 import 'package:mage/components/home_art_styles.dart';
@@ -10,6 +10,7 @@ import 'package:mage/components/home_input.dart';
 import 'package:mage/data/constants/system.dart';
 import 'package:mage/data/persistence/records_storage.dart';
 import 'package:mage/data/service/post.service.dart';
+import 'package:mage/helper/auth/get_user.dart';
 import 'package:mage/models/art_style.dart';
 import 'package:mage/models/record.dart';
 import 'package:mage/models/user.dart';
@@ -71,7 +72,8 @@ class _MyHomePageState extends State<HomePage> {
         ArtStyleResult.fromJson, apiGenerate, {
       'lora': lora,
       'mode': mode,
-      'qrCodeContent': qrCodeContent,
+      'qrCodeContent': mode == 'prompt' ? prompt : qrCodeContent,
+      // 'qrCodeContent': qrCodeContent,
       'qrCodeImage': qrCodeImage,
       'prompt': prompt
     });
@@ -120,9 +122,9 @@ class _MyHomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text(
-          'Create Pictures in My Artistic Style',
-          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+        title: Text(
+          AppLocalizations.of(context)!.homeTitle,
+          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
         ),
       ),
       body: SingleChildScrollView(
@@ -138,7 +140,7 @@ class _MyHomePageState extends State<HomePage> {
                 style:
                     ElevatedButton.styleFrom(minimumSize: const Size(200, 60)),
                 icon: const Icon(Icons.draw_outlined),
-                label: const Text('Make'),
+                label: Text(AppLocalizations.of(context)!.make),
               ),
               // ElevatedButton(onPressed: clear, child: const Text('Clear')),
             ],

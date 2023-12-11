@@ -1,9 +1,12 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:provider/provider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+import 'package:mage/data/constants/art_style.dart';
+import 'package:mage/models/record.dart';
 import 'package:mage/helper/format_time.dart';
 import 'package:mage/helper/save_image.dart';
-import 'package:mage/models/record.dart';
-import 'package:provider/provider.dart';
 
 class MilestoneTimeline extends StatelessWidget {
   const MilestoneTimeline({super.key});
@@ -17,9 +20,11 @@ class MilestoneTimeline extends StatelessWidget {
     // ignore: use_build_context_synchronously
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text(isSuccess ? 'Successful' : 'Failure'),
+        content: Text(isSuccess
+            ? AppLocalizations.of(context)!.successful
+            : AppLocalizations.of(context)!.failure),
         action: SnackBarAction(
-          label: 'Ok',
+          label: AppLocalizations.of(context)!.ok,
           onPressed: () {},
         ),
         width: 188.0,
@@ -37,7 +42,7 @@ class MilestoneTimeline extends StatelessWidget {
     return Consumer<RecordModel>(
       builder: (context, recordModel, child) => Expanded(
         child: recordModel.recordList.isEmpty
-            ? const Text('Empty')
+            ? Text(AppLocalizations.of(context)!.empty)
             : ListView.builder(
                 itemCount: recordModel.recordList.length,
                 itemBuilder: (context, index) {
@@ -54,7 +59,8 @@ class MilestoneTimeline extends StatelessWidget {
                             children: [
                               Expanded(
                                 flex: 1,
-                                child: Text(item.lora),
+                                child: Text(AppLocalizations.of(context)!
+                                    .style(artStylesMap[item.lora]!)),
                               ),
                               Align(
                                 // widthFactor: 1,
@@ -73,7 +79,8 @@ class MilestoneTimeline extends StatelessWidget {
                                           }
                                         },
                                         icon: const Icon(Icons.more_horiz),
-                                        tooltip: 'Show menu',
+                                        tooltip: AppLocalizations.of(context)!
+                                            .showMenu,
                                       );
                                     },
                                     menuChildren: <MenuItemButton>[
@@ -81,7 +88,9 @@ class MilestoneTimeline extends StatelessWidget {
                                         onPressed: () {
                                           handleSave(context, item.result);
                                         },
-                                        child: const Text('Download'),
+                                        child: Text(
+                                            AppLocalizations.of(context)!
+                                                .download),
                                       ),
                                       // MenuItemButton(
                                       //   onPressed: () {

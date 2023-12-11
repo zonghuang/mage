@@ -1,4 +1,40 @@
 {
+  "homeTitle": "Create Pictures in My Artistic Style",
+  "artTitle": "Artistic style",
+  "style": "{stylePlaceholder, select, Cyberpunk{Cyberpunk} InkPainting{Ink painting} Ukiyoe{Ukiyoe} Steampunk{Steampunk} AntiqueDress{Antique dress} AnimeFilm{Anime Film} MechStyle{Mech style} EmbossedStyle{Embossed style} CityStyle{City style} other{}}",
+  "@style": {
+    "description": "A style mode",
+    "placeholders": {
+      "stylePlaceholder": {
+        "type": "String"
+      }
+    }
+  },
+  "mode": "{modePlaceholder, select, picture{Picture} text{Link/Text} prompt{Prompt} other{}}",
+  "@mode": {
+    "description": "A mode type",
+    "placeholders": {
+      "modePlaceholder": {
+        "type": "String"
+      }
+    }
+  },
+  "pictureTips": "Please upload your picture.",
+  "textTips": "Please input your link or text.",
+  "promptTips": "Please input your prompt.",
+  "uploadFailure": "Upload failure",
+  "successful": "Successful",
+  "failure": "Failure",
+  "ok": "Ok",
+  "empty": "Empty",
+  "showMenu": "Show menu",
+  "download": "Download",
+
+  "make": "Make",
+  "home": "Home",
+  "me": "Me",
+  
+
   "helloWorld": "Hello World!",
   "@helloWorld": {
     "description": "The conventional newborn programmer greeting"

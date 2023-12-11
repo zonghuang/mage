@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'package:mage/data/constants/art_style.dart';
 import 'package:mage/helper/get_random_fileName.dart';
@@ -28,7 +29,7 @@ class HomeInput extends StatelessWidget {
       } catch (error) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: const Text('Upload failure'),
+            content: Text(AppLocalizations.of(context)!.uploadFailure),
             action: SnackBarAction(
               label: 'Ok',
               onPressed: () {},
@@ -58,18 +59,27 @@ class HomeInput extends StatelessWidget {
               width: 350,
               padding: const EdgeInsets.all(8),
               child: SegmentedButton<Options>(
-                segments: const <ButtonSegment<Options>>[
-                  ButtonSegment<Options>(
-                    value: Options.text,
-                    label: Text('Link/Text', style: TextStyle(fontSize: 12)),
-                  ),
+                segments: <ButtonSegment<Options>>[
                   ButtonSegment<Options>(
                     value: Options.picture,
-                    label: Text('Picture', style: TextStyle(fontSize: 12)),
+                    label: Text(
+                      AppLocalizations.of(context)!.mode('picture'),
+                      style: const TextStyle(fontSize: 12),
+                    ),
+                  ),
+                  ButtonSegment<Options>(
+                    value: Options.text,
+                    label: Text(
+                      AppLocalizations.of(context)!.mode('text'),
+                      style: const TextStyle(fontSize: 12),
+                    ),
                   ),
                   ButtonSegment<Options>(
                     value: Options.prompt,
-                    label: Text('Prompt', style: TextStyle(fontSize: 12)),
+                    label: Text(
+                      AppLocalizations.of(context)!.mode('prompt'),
+                      style: const TextStyle(fontSize: 12),
+                    ),
                   ),
                 ],
                 selected: artStyleModel.artStyleForm.mode,
@@ -96,9 +106,9 @@ class HomeInput extends StatelessWidget {
                   ),
                   minLines: 2,
                   maxLines: null,
-                  decoration: const InputDecoration(
-                    border: OutlineInputBorder(),
-                    labelText: 'Please input your link or text.',
+                  decoration: InputDecoration(
+                    border: const OutlineInputBorder(),
+                    labelText: AppLocalizations.of(context)!.textTips,
                   ),
                 ),
               ),
@@ -122,13 +132,14 @@ class HomeInput extends StatelessWidget {
                                       color: Colors.black45, width: 1),
                                   borderRadius: BorderRadius.circular(4.0),
                                 ),
-                                child: const Column(
+                                child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Icon(Icons.add, size: 32),
+                                    const Icon(Icons.add, size: 32),
                                     Text(
-                                      'Please upload your picture',
-                                      style: TextStyle(color: Colors.black54),
+                                      AppLocalizations.of(context)!.pictureTips,
+                                      style: const TextStyle(
+                                          color: Colors.black54),
                                     ),
                                   ],
                                 ),
@@ -176,9 +187,9 @@ class HomeInput extends StatelessWidget {
                   ),
                   minLines: 2,
                   maxLines: null,
-                  decoration: const InputDecoration(
-                    border: OutlineInputBorder(),
-                    labelText: 'Please input your prompt.',
+                  decoration: InputDecoration(
+                    border: const OutlineInputBorder(),
+                    labelText: AppLocalizations.of(context)!.promptTips,
                   ),
                 ),
               ),
