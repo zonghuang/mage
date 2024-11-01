@@ -1,4 +1,4 @@
-package com.example.mage
+package com.artmage.mage
 
 import io.flutter.embedding.android.FlutterActivity
 

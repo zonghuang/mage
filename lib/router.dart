@@ -1,7 +1,7 @@
 import 'package:go_router/go_router.dart';
-import 'package:mage/pages/account_manage/account_manage_page.dart';
+// import 'package:mage/pages/account_manage/account_manage_page.dart';
 // import 'package:mage/pages/future_page/future_page.dart';
-import 'package:mage/pages/login/login_page.dart';
+// import 'package:mage/pages/login/login_page.dart';
 import 'package:mage/pages/home/home_page.dart';
 import 'package:mage/pages/me/me.dart';
 
@@ -21,13 +21,13 @@ final router = GoRouter(
       path: '/me',
       builder: (context, state) => const MePage(title: 'Me'),
     ),
-    GoRoute(
-      path: '/login',
-      builder: (context, state) => const LoginPage(title: 'Login'),
-    ),
-    GoRoute(
-      path: '/account',
-      builder: (context, state) => const AccountManagePage(),
-    ),
+    // GoRoute(
+    //   path: '/login',
+    //   builder: (context, state) => const LoginPage(title: 'Login'),
+    // ),
+    // GoRoute(
+    //   path: '/account',
+    //   builder: (context, state) => const AccountManagePage(),
+    // ),
   ],
 );

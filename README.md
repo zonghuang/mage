@@ -58,3 +58,52 @@ zonghuang@zonghuangdeMacBook-Pro mage_app % keytool -list -v \
 26. Home
 27. Me
 28. Hello World!
+
+<!-- https://www.freepik.com/icons/android/2#uuid=b3ee5c8d-94f5-4db4-a83a-60e36ca7a614 -->
+/* background-image: url('https://newres.wechat.com/t/wx_fed/base/wechat/wechat-main-page/wechat-main-page-oversea-new/res/static/img/3cBQnDI.jpg'); */
+/* background-image: url(https://magic.zonghuang.cn/web/space.png); */
+/* background-size: cover; */
+Aliyun2023
+
+
+keytool -genkey -v -keystore ~/upload-keystore.jks -keyalg RSA \
+        -keysize 2048 -validity 10000 -alias mage
+artmage
+
+输入唯一判别名。提供单个点 (.) 以将子组件留空，或按 ENTER 以使用大括号中的默认值。
+您的名字与姓氏是什么?
+  [Unknown]:  HuangSheng
+您的组织单位名称是什么?
+  [Unknown]:  HuangShengTech
+您的组织名称是什么?
+  [Unknown]:  HuangShengTech
+您所在的城市或区域名称是什么?
+  [Unknown]:  Shenzhen
+您所在的省/市/自治区名称是什么?
+  [Unknown]:  Guangdong
+该单位的双字母国家/地区代码是什么?
+  [Unknown]:  CN
+CN=HuangSheng, OU=HuangShengTech, O=HuangShengTech, L=Shenzhen, ST=Guangdong, C=CN是否正确?
+  [否]:  
+输入唯一判别名。提供单个点 (.) 以将子组件留空，或按 ENTER 以使用大括号中的默认值。
+您的名字与姓氏是什么?
+  [HuangSheng]:  HuangSheng
+您的组织单位名称是什么?
+  [HuangShengTech]:  HuangShengTech    
+您的组织名称是什么?
+  [HuangShengTech]:  HuangShengTech
+您所在的城市或区域名称是什么?
+  [Shenzhen]:  Shenzhen
+您所在的省/市/自治区名称是什么?
+  [Guangdong]:  Guangdong
+该单位的双字母国家/地区代码是什么?
+  [CN]:  CN
+CN=HuangSheng, OU=HuangShengTech, O=HuangShengTech, L=Shenzhen, ST=Guangdong, C=CN是否正确?
+  [否]:  y
+
+正在为以下对象生成 2,048 位RSA密钥对和自签名证书 (SHA384withRSA) (有效期为 10,000 天):
+         CN=HuangSheng, OU=HuangShengTech, O=HuangShengTech, L=Shenzhen, ST=Guangdong, C=CN
+[正在存储/Users/zonghuang/upload-keystore.jks]
+
+
+flutter build appbundle

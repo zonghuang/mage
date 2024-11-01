@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:172752432223:android:3142c6dc7a14aa0e5a3fea",
         "android_client_info": {
-          "package_name": "com.example.mage"
+          "package_name": "com.artmage.mage"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "172752432223-586453kj3fldcdidkcrj1t8a8abi91on.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.mage",
+            "package_name": "com.artmage.mage",
             "certificate_hash": "a9365aed29371c3d6f0d0751160d6553b24d1774"
           }
         },
@@ -42,7 +42,7 @@
               "client_id": "172752432223-cqoot9kkglkk11h6fp60ltak31l11432.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.mage.RunnerTests"
+                "bundle_id": "com.artmage.mage.RunnerTests"
               }
             }
           ]

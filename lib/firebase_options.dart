@@ -67,9 +67,11 @@ class DefaultFirebaseOptions {
     messagingSenderId: '172752432223',
     projectId: 'mage-e180d',
     storageBucket: 'mage-e180d.appspot.com',
-    androidClientId: '172752432223-586453kj3fldcdidkcrj1t8a8abi91on.apps.googleusercontent.com',
-    iosClientId: '172752432223-eudpqel0velf7nc1ptmt8afsuellrbcs.apps.googleusercontent.com',
-    iosBundleId: 'com.example.mage',
+    androidClientId:
+        '172752432223-586453kj3fldcdidkcrj1t8a8abi91on.apps.googleusercontent.com',
+    iosClientId:
+        '172752432223-eudpqel0velf7nc1ptmt8afsuellrbcs.apps.googleusercontent.com',
+    iosBundleId: 'com.artmage.mage',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
@@ -78,8 +80,10 @@ class DefaultFirebaseOptions {
     messagingSenderId: '172752432223',
     projectId: 'mage-e180d',
     storageBucket: 'mage-e180d.appspot.com',
-    androidClientId: '172752432223-586453kj3fldcdidkcrj1t8a8abi91on.apps.googleusercontent.com',
-    iosClientId: '172752432223-cqoot9kkglkk11h6fp60ltak31l11432.apps.googleusercontent.com',
-    iosBundleId: 'com.example.mage.RunnerTests',
+    androidClientId:
+        '172752432223-586453kj3fldcdidkcrj1t8a8abi91on.apps.googleusercontent.com',
+    iosClientId:
+        '172752432223-cqoot9kkglkk11h6fp60ltak31l11432.apps.googleusercontent.com',
+    iosBundleId: 'com.artmage.mage.RunnerTests',
   );
 }

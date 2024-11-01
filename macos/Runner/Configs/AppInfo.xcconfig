@@ -8,7 +8,7 @@
 PRODUCT_NAME = mage
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.example.mage
+PRODUCT_BUNDLE_IDENTIFIER = com.artmage.mage
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2023 com.example. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2023 com.artmage. All rights reserved.

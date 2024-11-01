@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mage</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      height: 100vh;
+      /* background-image: url('https://st2.depositphotos.com/3730475/6441/i/450/depositphotos_64411041-stock-photo-starry-night-sky-with-stars.jpg'); */
+      /* background-size: cover; */
+    }
+    body::before{    
+      content:'';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent url(https://st2.depositphotos.com/3730475/6441/i/450/depositphotos_64411041-stock-photo-starry-night-sky-with-stars.jpg) center center no-repeat;
+      filter: blur(5px);
+      z-index: -1;
+      background-size: cover;
+    }
+
+    /********** main *********/
+    main {
+      max-width: 1200px;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 50px;
+      margin: 0 auto;
+    }
+    main .product {
+      width: 300px;
+      height: 610px;
+      border-radius: 8px;
+    }
+    main .brand {
+      max-width: 850px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+    }
+    main .brand .mage-logo {
+      width: 83px;
+      height: 83px;
+      border-radius: 16px;
+    }
+    main .brand .description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 44px;
+      color: #fff;
+    }
+    main .downloads {
+      display: flex;
+      gap: 16px;
+    }
+    main .downloads img {
+      width: 40px;
+      height: 40px;
+    }
+    main .downloads .download-apple,
+    main .downloads .download-android {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 4px;
+      width: 180px;
+      border-radius: 8px;
+      color: #fff;
+      background: #100c0a;
+      cursor: pointer;
+    }
+    main .downloads .download-android {
+      width: 155px;
+    }
+    main .downloads .download-apple .download__tips,
+    main .downloads .download-android .download__tips {
+      display: flex;
+      flex-direction: column;
+      font-size: 10px;
+    }
+    main .downloads .download-apple .download__tips .platform,
+    main .downloads .download-android .download__tips .platform {
+      display: flex;
+      align-items: center;
+      height: 24px;
+      font-size: 22px;
+    }
+
+    /********** footer *********/
+    footer {
+      border-top: 1px solid hsla(0, 0%, 100%, .12);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin-top: 24px;
+      height: 44px;
+      color: #a8a8a8;
+      font-size: 12px;
+    }
+    footer .copyright {
+      margin-right: 12px;
+    }
+    footer .terms-of-service:hover,
+    footer .privacy-policy:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    footer .contact {
+      margin-left: 12px;
+    }
+    footer a {
+      text-decoration: none;
+      color: #a8a8a8;
+    }
+  </style>
+</head>
+<body>
+  <header></header>
+
+  <main>
+    <img class="product" src="https://newres.wechat.com/t/wx_fed/base/wechat/wechat-main-page/wechat-main-page-oversea-new/res/static/img/1-MVNBf.png" alt="product" />
+    <div class="brand">
+      <img class="mage-logo" src="https://newres.wechat.com/t/wx_fed/base/wechat/wechat-main-page/wechat-main-page-oversea-new/res/static/img/3ou3PnG.png" alt="mage" />
+      <div class="description">Here's a brief description of your app and its features.</div>
+      <div class="downloads">
+        <div class="download-apple">
+          <img class="apple-icon" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Apple-logo.png" alt="apple icon" />
+          <div class="download__tips">
+            <span class="tips">Download on the</span>
+            <span class="platform">App Store</span>
+          </div>
+        </div>
+        <div class="download-android">
+          <img class="android-icon" src="https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/ANDROID-1024.png" alt="android icon" />
+          <div class="download__tips">
+            <span class="tips">Download for</span>
+            <span class="platform">Android</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="copyright">Copyright © 2023 HuangSheng. All Rights Reserved.</div>
+    <a class="terms-of-service" href="#">Terms of Service</a >
+    <span>|</span>
+    <a class="privacy-policy" href="#">Privacy Policy</a >
+    <div class="contact">Contact: <a class="email" href="mailto:huangshengtech@gmail.com">huangshengtech@gmail.com</a ></div>
+  </footer>
+</body>
+</html>
+<!-- https://www.freepik.com/icons/android/2#uuid=b3ee5c8d-94f5-4db4-a83a-60e36ca7a614 -->
